@@ -61,7 +61,26 @@ admin:x:1000:1000:admin:/home/admin:/bin/bash
 ## change to root
 sudo su -
 ```
+---
+# user file
+```bash
+$ grep admin /etc/group
+wheel:x:10:admin
+libvirt:x:985:admin
+admin:x:1000:
+docker:x:974:admin
 
+$ grep admin /etc/shadow
+grep: /etc/shadow: Permission denied
+
+$ sudo grep admin /etc/shadow
+[sudo] password for admin:
+
+admin:$6$0H7zn1eUat3oCwhM$zJneG.ouMp992r/kIvkOJdO8k.kozrNJUXmxF7zdw8SSzXQHYHvsZXHldpTIGwJahelNZreY0pqkHZdtnuhO3.::0:99999:7:::
+
+```
+---
+#Install packages
 ```bash
 dnf groupinstall "Development Tools"
 dnf update -y
