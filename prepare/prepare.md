@@ -96,7 +96,6 @@ dnf install -y thai-* google-noto-sans-thai-fonts.noarch google-noto-serif-thai-
 dnf install -y git git-cola
 dnf install -y ruby ruby-devel libxml2
 dnf install -y vagrant vagrant-libvirt
-vagrant box add centos/7
 ```
 .footnote[Go back to [main menu](../index.html)]
 ---
@@ -108,7 +107,7 @@ dnf -y install qemu-kvm libvirt virt-install bridge-utils
 systemctl start libvirtd
 systemctl enable libvirtd
 
-usemod -a -G libvirt admin
+usermod -a -G libvirt admin
 
 ##verify
 lsmod | grep kvm
