@@ -81,7 +81,15 @@ admin:$6$0H7zn1eUat3oCwhM$zJneG.ouMp992r/kIvkOJdO8k.kozrNJUXmxF7zdw8SSzXQHYHvsZX
 ```
 ---
 #Install packages
+- dnf -> packages management
+- repo ->  /etc/yum.repos.d/
+
 ```bash
+## repo
+ls /etc/yum.repos.d/
+## dnf command
+dnf repolist
+dnf grouplist
 dnf groupinstall "Development Tools"
 dnf update -y
 dnf install -y thai-* google-noto-sans-thai-fonts.noarch google-noto-serif-thai-fonts.noarch
