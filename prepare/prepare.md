@@ -38,6 +38,10 @@ cat ~/.ssh/id_rsa.pub
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFVazRu/snNb4RpiVwn+2dE+3yFaLk4gYGTvKFaLy/EOyaJwpLbKIbycPFUdUktiJXTQ3G1YdiQG29xbvBpQnfTKouOK93qjCaSRTKJCjV2vCldjby4qrYcG9l4a4Ush1fDFXNl61bEdIbRI9lyZv/eV3pmBiJjPu8OL/ulN+SaUJ3UBKVj1rjJy016fT5AefiiHVs7fqMwmhb3RJgCOQ6WWi3A6qXI+/7G4GNsw5CNxv+Nrw95TX6LD54kioNDb3VSaIwhNfbnQ0ZcfEPmFBR6sDX7Rmyrs7uWkEfQDD4CtLCbfjHACNoHr4bcbRprPXUkpuFIapEyuRqDYPY7fXh admin@localhost.localdomain
 
+cd ~
+git clone https://github.com/itbakery/training
+cd training
+firefox index.html
 
 ```
 ---
