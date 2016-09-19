@@ -242,7 +242,9 @@ userdel -r username
 
 ```
 ## Check ip address
-### ip command (iproute package)
+### ip command (iproute package
+
+  )
 .footnote[Go back to [main menu](../index.html)]
 ---
 

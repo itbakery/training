@@ -55,6 +55,9 @@ uid=1000(admin) gid=1000(admin) groups=1000(admin),10(wheel)
 sudo grep admin /etc/sudoers
 admin ALL=(ALL)  ALL
 
+grep admin /etc/passwd
+admin:x:1000:1000:admin:/home/admin:/bin/bash
+
 ## change to root
 sudo su -
 ```
