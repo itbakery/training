@@ -173,7 +173,7 @@ dnf update -y
 dnf install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
 dnf install -y VirtualBox-5.1
 wget http://download.virtualbox.org/virtualbox/5.1.6/Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634.vbox-extpack
-mv Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634.vbox-extpack  /home/admin/Download/
+mv Oracle_VM_VirtualBox_Extension_Pack-5.1.6-110634.vbox-extpack  /home/admin/Downloads/
 ## open filebrower and double click
 ```
 
