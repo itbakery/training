@@ -124,6 +124,9 @@ Y
 ```
 .footnote[Go back to [main menu](../index.html)]
 ---
+##Diagram
+![kvm](images/kvm.png)
+---
 ##install chrome
 manually add repo to /etc/yum.repos.d/
 
