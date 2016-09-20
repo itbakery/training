@@ -42,6 +42,8 @@ git1]$ git add file1.txt
 ## Git state
 ![stage](images/git-tutorial.jpg)
 ---
+## Git tree
+![tree](images/trees.png)
 ## How to use
 - Create Project directory
 - Create Vagrantfile inside project folder
