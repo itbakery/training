@@ -132,9 +132,11 @@ ip a
 ```
 - vagrant ssh server2
 - ** repeat Lab
+---
+## restart vagrant (not destroy)
+
 ```bash
 vagrantla1 ]$ vagrant halt
 vagrantla1 ]$ vagrant up
 ```
-** try to use tap tap
 ---
