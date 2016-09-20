@@ -124,9 +124,17 @@ sudo nmcli con mod System\ eth0 ipv4.addresses 192.168.121.239/24
 sudo nmcli con mod System\ eth0 ipv4.gateway 192.168.121.1
 sudo nmcli con mod System\ eth0 ipv4.method manual
 
-/etc/sysconfig/network-scripts/ifcfg-eth0
+cat /etc/sysconfig/network-scripts/ifcfg-eth0
 
 ip a
+
+## repeat on server2
+```
+- vagrant ssh server2
+- ** repeat Lab
+```bash
+vagrantla1 ]$ vagrant halt
+vagrantla1 ]$ vagrant up
 ```
 ** try to use tap tap
 ---
