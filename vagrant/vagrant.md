@@ -1,6 +1,18 @@
 name: inverse
 layout: true
 class: center, middle, inverse
+
+---
+## Vagrant
+
+---
+layout: false
+## What is Vagrant
+- command line to create virtual machine
+- support libvirt / virtualbox
+- can run provision :  shell script , ansible , chef, Puppet
+
+
 ---
 ## Basic git
 ```bash
@@ -11,15 +23,6 @@ ls -a
 git config --global user.name "sawangpong muadphet"
 git config --global user.email sawangpong@example.com
 ```
----
-## Vagrant
-
----
-layout: false
-## What is Vagrant
-
-
-
 ---
 ## How to use
 - Create Project directory
