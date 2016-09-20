@@ -44,6 +44,12 @@ git1]$ git add file1.txt
 ---
 ## Git tree
 ![tree](images/trees.png)
+
+---
+## online tutorial
+- https://try.github.io/levels/1/challenges/1
+- https://onlywei.github.io/explain-git-with-d3/
+---
 ## How to use
 - Create Project directory
 - Create Vagrantfile inside project folder
