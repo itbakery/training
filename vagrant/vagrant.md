@@ -78,6 +78,9 @@ uid=1000(vagrant) gid=1000(vagrant) groups=1000(vagrant) context=unconfined_u:un
 admin@localhost]$  vagrant destroy
 ```
 ---
+## vm and bridge
+![image](images/bridge.png)
+---
 ## Understand network
 - ip command
   - ip a
