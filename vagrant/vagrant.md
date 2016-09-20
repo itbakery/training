@@ -39,6 +39,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 git1]$ git add file1.txt
 ```
 ---
+## Git state
+![stage](images/git-tutorial.jpg)
+---
 ## How to use
 - Create Project directory
 - Create Vagrantfile inside project folder
