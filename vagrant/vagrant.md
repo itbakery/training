@@ -17,11 +17,26 @@ layout: false
 ## Basic git
 ```bash
 mkdir  ~/git1  && cd ~/git1
-git init .
+git1]$ git init .
 Initialized empty Git repository in /home/admin/git1/.git/
 ls -a
-git config --global user.name "sawangpong muadphet"
-git config --global user.email sawangpong@example.com
+git1]$ git config --global user.name "sawangpong muadphet"
+git1]$ git config --global user.email sawangpong@example.com
+
+git1]$ touch file1.txt
+git1]$ git status
+On branch master
+Initial commit
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	file1.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+```
+---
+## git add
+```bash
+git1]$ git add file1.txt
 ```
 ---
 ## How to use
