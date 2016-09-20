@@ -46,7 +46,7 @@ git1]$ git add file1.txt
 ![tree](images/trees.png)
 
 ---
-## Git remote 
+## Git remote
 ```bash
 git1]$ git remote add origin https://github.com/itbakery/trygit.git
 git1]$ git push -u origin master
@@ -73,6 +73,9 @@ vagrant ssh
 [vagrant@localhost ~]$ id
 uid=1000(vagrant) gid=1000(vagrant) groups=1000(vagrant) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 [vagrant@localhost ~]$ ip a
+[vagrant@localhost ~]$ exit
+
+admin@localhost]$  vagrant destroy
 ```
 ---
 ## Understand network
