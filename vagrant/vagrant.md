@@ -46,6 +46,13 @@ git1]$ git add file1.txt
 ![tree](images/trees.png)
 
 ---
+## Git remote 
+```bash
+git1]$ git remote add origin https://github.com/itbakery/trygit.git
+git1]$ git push -u origin master
+
+```
+---
 ## online tutorial
 - https://try.github.io/levels/1/challenges/1
 - https://onlywei.github.io/explain-git-with-d3/
