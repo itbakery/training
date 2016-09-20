@@ -140,3 +140,9 @@ vagrantla1 ]$ vagrant halt
 vagrantla1 ]$ vagrant up
 ```
 ---
+## Vagrant infrastructure
+- Vagrant create vm
+- vagrant create eth1
+- vagrant request libvirt create linux bridge
+![infra](images/infra.png)
+---
