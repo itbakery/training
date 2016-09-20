@@ -2,6 +2,16 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
+## Basic git
+```bash
+mkdir  ~/git1  && cd ~/git1
+git init .
+Initialized empty Git repository in /home/admin/git1/.git/
+ls -a
+git config --global user.name "sawangpong muadphet"
+git config --global user.email sawangpong@example.com
+```
+---
 ## Vagrant
 
 ---
