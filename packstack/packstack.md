@@ -7,9 +7,9 @@ class: center, middle, inverse
 layout: false
 ## RDO project
 ### What is rdo project
-https://www.rdoproject.org/
-https://www.rdoproject.org/install/quickstart/
-https://wiki.openstack.org/wiki/Puppet
+- https://www.rdoproject.org/
+- https://www.rdoproject.org/install/quickstart/
+- https://wiki.openstack.org/wiki/Puppet
 ---
 ## workshop Openstack
 - vagrantfile in traning/openstack1
