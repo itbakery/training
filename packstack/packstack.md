@@ -96,6 +96,7 @@ packstack --install-hosts=10.10.10.10,10.10.10.11 \
 --os-heat-install=y --os-heat-cfn-install=y \
 --os-sahara-install=y --os-trove-install=y \
 --os-neutron-lbaas-install=y \
+--cinder-volumes-create=n \
 --keystone-admin-passwd=linux
 ```
 ## run second time
