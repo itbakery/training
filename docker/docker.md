@@ -139,6 +139,9 @@ note
 - docker search django
 -->
 ---
+##explain
+![hello](images/hello.png)
+---
 ## Enjoy flglet
 
 ```bash
