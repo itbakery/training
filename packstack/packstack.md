@@ -41,11 +41,16 @@ ls ~/.ssh/
 id_rsa  id_rsa.pub
 ##1  Transfer public key to compute
 ssh-copy-id compute
+#(root passwd is 'linux')
 ## Test
 ssh compute
+exit
 ##2 Transfer public key to self(controller)
 ssh-copy-id controller
+#(root passwd is 'linux')
+## Test
 ssh controller
+exit
 ```
 ---
 ## ssh keytransfer
@@ -56,7 +61,20 @@ ssh controller
 crate volume groups name 'cinder-volumes' for cinder as block storage
 ```bash
 pvcreate /dev/vdb
+fdisk /dev/vdb
+n
+p
+1
+enter
+enter
+w
+
+partprobe
 vgcreate cinder-volumes /dev/vdb1
+
+  Physical volume "/dev/vdb1" successfully created
+  Volume group "cinder-volumes" successfully created
+
 ```
 ---
 ## packstack
@@ -68,11 +86,14 @@ packstack --version
 packstack --install-hosts=10.10.10.10,10.10.10.11 \
 --provision-demo=n \
 --nagios-install=n \
---os-neutron-ovs-bridge-mappings=extnet:br-ex,physnet1:br-eth2\
+--os-neutron-ovs-bridge-mappings=extnet:br-ex,physnet1:br-eth2 \
 --os-neutron-ovs-bridge-interfaces=br-ex:eth0,br-eth2:eth2 \
 --os-neutron-ml2-type-drivers=vxlan,flat,local,vlan \
---os-neutron-ml2-vlan-ranges=physnet1:1000:2000
+--os-neutron-ml2-vlan-ranges=physnet1:1000:2000 \
 --os-heat-install=y --os-heat-cfn-install=y \
 --os-sahara-install=y --os-trove-install=y \
 --os-neutron-lbaas-install=y \
+--keystone-admin-passwd=linux
 ```
+## run second time
+**  packstack --answer-file=packstack-answers-xxxxxxxxx.txt

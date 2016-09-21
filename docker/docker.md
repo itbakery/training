@@ -53,14 +53,18 @@ layout: false
 - The Docker client
 	- The Docker client, in the form of the docker binary, is the primary user interface to Docker. It accepts commands from the user and communicates back and forth with a Docker daemon
 ---
+## Docker Architecture
+![arch](images/architech.png)
+
+---
 ## bootfs and rootfs
 
-A typical Linux start to run to two FS - bootfs + rootfs 
+A typical Linux start to run to two FS - bootfs + rootfs
 - bootfs (boot file system) Including bootloader and kernel
 	- bootloader is the main kernel boot loader,
 	- cgroups, namespace, device mapper
 - different Linux distributions, the bootfs is basically the same, the rootfs will be different
- 
+
 ![docker logo](./images/bootfs.png)
 ---
 ## Container images
@@ -145,9 +149,9 @@ root@202b4ce1a87c:/# apt-get install figlet
 root@202b4ce1a87c:/# figlet  hello
  _          _ _       
  | |__   ___| | | ___  
- | '_ \ / _ \ | |/ _ \ 
+ | '_ \ / _ \ | |/ _ \
  | | | |  __/ | | (_) |
- |_| |_|\___|_|_|\___/ 
+ |_| |_|\___|_|_|\___/
 
 root@202b4ce1a87c:/# exit
 ## start new
@@ -182,7 +186,7 @@ docker run --name web2 -v ~/labdocker1/www:/var/www/html -d -p 8080:80 php:5.6-a
 4. rum command
 
 ```bash
-git clone 
+git clone
 docker-compose up
 ```
 ###Install compose
@@ -198,7 +202,7 @@ $ sudo su -
 [lab Docker 3 file](./dockerlab3/)
 
 ```bash
-$ tree 
+$ tree
 .
 ├── app.py
 ├── docker-compose.yml
