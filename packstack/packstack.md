@@ -166,6 +166,7 @@ verify 3 line:
 ## test v3 on host
 cd ~/openstackrc_v3/
 source admin-openrc.sh
+openstack user list
 ```
 ---
 ## Open docs.openstack.org
