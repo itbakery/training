@@ -328,6 +328,10 @@ openstack image create "cirros" \
 | virtual_size     | None                                               |
 | visibility       | public                                             |
 +------------------+----------------------------------------------------+
+
+[root@controller ~]# ls /var/lib/glance/images/
+5165156e-13d7-4638-b92e-cf6b08d7ad7c
+
 ```
 ---
 ## Install
