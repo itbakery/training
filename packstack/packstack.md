@@ -249,6 +249,23 @@ openstack service list
 ...
 ```
 ---
+## User token base
+- service login first
+- get token
+- use token to request other service
+```bash
+openstack token issue
++------------+----------------------------------+
+| Field      | Value                            |
++------------+----------------------------------+
+| expires    | 2016-09-22T06:35:13.579689Z      |
+| id         | d219ddb146154ec5bf7dbc9244adee9c |
+| project_id | a1d6310f642642fa9139bcfe5aeffe67 |
+| user_id    | d9733843d0274b76bc1629ea0f4043f1 |
++------------+----------------------------------+
+
+```
+---
 ## Install
 
 ![architecture](images/basic.png)
