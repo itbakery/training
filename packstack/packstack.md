@@ -340,6 +340,23 @@ openstack image create "cirros" \
 source admin-openrc.sh
 
 openstack compute service list
++----+----------------+----------------+----------+---------+-------+------------------+
+| Id | Binary         | Host           | Zone     | Status  | State | Updated At       |
++----+----------------+----------------+----------+---------+-------+------------------+
+|  5 | nova-cert      | controller.exa | internal | enabled | up    | 2016-09-22T06:34 |
+|    |                | mple.com       |          |         |       | :46.000000       |
+|  6 | nova-          | controller.exa | internal | enabled | up    | 2016-09-22T06:34 |
+|    | consoleauth    | mple.com       |          |         |       | :46.000000       |
+|  7 | nova-scheduler | controller.exa | internal | enabled | up    | 2016-09-22T06:34 |
+|    |                | mple.com       |          |         |       | :47.000000       |
+|  8 | nova-conductor | controller.exa | internal | enabled | up    | 2016-09-22T06:34 |
+|    |                | mple.com       |          |         |       | :39.000000       |
+| 10 | nova-compute   | compute1.examp | nova     | enabled | up    | 2016-09-22T06:34 |
+|    |                | le.com         |          |         |       | :38.000000       |
+| 11 | nova-compute   | compute2.examp | nova     | enabled | up    | 2016-09-22T06:34 |
+|    |                | le.com         |          |         |       | :41.000000       |
++----+----------------+----------------+----------+---------+-------+------------------+
+
 ```
 ---
 ## Install
