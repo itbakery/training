@@ -275,7 +275,7 @@ openstack token issue
 - open new terminal go to ~/openstackrc_v3
 ```bash
 source demo-openrc.sh
-openstack catalog listopenstack catalog list
+openstack catalog list
 ```
 ---
 ## Install
