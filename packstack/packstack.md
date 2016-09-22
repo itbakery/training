@@ -279,8 +279,17 @@ openstack catalog list
 ```
 ---
 ## Image glance
+work on controller
 
-```base
+```bash
+##copy rc file in to controller
+cd ~/openstackrc_v3
+scp * root@10.10.10.10:/root
+
+## ssh to controller
+vagrant ssh controller
+sudo su -
+
 wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
 
 openstack image create "cirros" \
