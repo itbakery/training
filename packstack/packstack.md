@@ -267,6 +267,17 @@ openstack token issue
 
 ```
 ---
+## Get 'demo-openrc.sh
+
+- login to web demo
+- Project > Compute > Access & Security > Api access tab
+- Download Openstack rc v3 to ~/openstackrc_v3
+- open new terminal go to ~/openstackrc_v3
+```bash
+source demo-openrc.sh
+openstack catalog listopenstack catalog list
+```
+---
 ## Install
 
 ![architecture](images/basic.png)
