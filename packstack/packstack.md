@@ -205,6 +205,19 @@ Repeat User Password:
 | username | demo2                            |
 +----------+----------------------------------+
 ```
+### add user to project with role _memeber_
+
+```bash
+openstack role add --project demo2 --user demo2 _member_
++-----------+----------------------------------+
+| Field     | Value                            |
++-----------+----------------------------------+
+| domain_id | None                             |
+| id        | 9fe2ff9ee4384b1894a90878d3e92bab |
+| name      | _member_                         |
++-----------+----------------------------------+
+
+```
 ---
 ## Open docs.openstack.org
 - http://docs.openstack.org/mitaka/install-guide-rdo/
