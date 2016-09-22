@@ -122,7 +122,9 @@ packstack --install-hosts=10.10.10.10,10.10.10.11,10.10.10.12
 --cinder-volumes-create=n \
 --keystone-admin-passwd=linux
 ```
-
+---
+## Open docs.openstack.org
+- http://docs.openstack.org/mitaka/install-guide-rdo/
 ---
 ## Install openstack client [on host]
 ```bash
@@ -218,9 +220,33 @@ openstack role add --project demo2 --user demo2 _member_
 +-----------+----------------------------------+
 
 ```
----
-## Open docs.openstack.org
-- http://docs.openstack.org/mitaka/install-guide-rdo/
+## Every user / service must be in project
+```bash
+openstack project list
++----------------------------------+----------+
+| ID                               | Name     |
++----------------------------------+----------+
+| 45ff66b9fcaa45e9874325110080559b | services |
+| 81504adb59c44135bae443c1c0832615 | demo     |
+| a1d6310f642642fa9139bcfe5aeffe67 | admin    |
+| ce352b6caacb44899e58953f47537857 | demo2    |
++----------------------------------+----------+
+
+openstack service list
++----------------------------------+---------------+-----------------+
+| ID                               | Name          | Type            |
++----------------------------------+---------------+-----------------+
+| 4dc22ebe433645ecaa414850ad5e435c | swift         | object-store    |
+| 5301884c9f48461db329e2574ed9bd68 | aodh          | alarming        |
+| 7d6549f07fa346e3897dfd9d79323ec4 | novav3        | computev3       |
+| 81b4bac5729145bfb699ba5cae71cbef | nova          | compute         |
+| 87200b01706d4daab1d97933063bcab5 | gnocchi       | metric          |
+| 896fc188693d415cb52af544980d7ec8 | neutron       | network         |
+| 950f791108364199ac1883f297770944 | sahara        | data-processing |
+| a6c21c17aa894b179dde052072e21d2e | cinderv2      | volumev2        |
+| a8ed962c9e5e44559bc7204a95424dae | trove         | database        |
+...
+```
 ---
 ## Install
 
