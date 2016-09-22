@@ -169,6 +169,16 @@ source admin-openrc.sh
 openstack user list
 ```
 ---
+## lab keystone
+### Create a domain, projects, users, and roles
+- Create the default domain
+- Create the admin project:
+- Create the admin user:
+- Create the admin role:
+- Add the admin role to the admin project and user:
+```bash
+```
+---
 ## Open docs.openstack.org
 - http://docs.openstack.org/mitaka/install-guide-rdo/
 ---
