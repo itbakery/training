@@ -154,7 +154,7 @@ cd ~ && mkdir openstackrc_v3 && cd openstackrc_v3
 From menu on left, select(open openstack web)
 - Project > Compute > Access & Security
 - Select Api Access tab
-    - Download Openstack RC File V3 save as 'ADMIN_RC_V3' on host in
+    - Download Openstack RC File V3 save 'admin-openrc.sh' on host in
     ~/openstackrc_v3/
 
 verify 3 line:
@@ -162,10 +162,14 @@ verify 3 line:
     - export OS_AUTH_VERSION=3
     - export OS_PROJECT_DOMAIN_NAME="Default"
 
-copy file ADMIN_RC_V3 to controller
 ```bash
-source ADMIN_RC_V3
+## test v3 on host
+cd ~/openstackrc_v3/
+source admin-openrc.sh
 ```
+---
+## Open docs.openstack.org
+- http://docs.openstack.org/mitaka/install-guide-rdo/
 ---
 ## Install
 
