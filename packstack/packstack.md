@@ -365,6 +365,20 @@ via gui  :  Admin > System > Hypervisor
 ## Neutron network
 ![tenent](images/tenent.png)
 ---
+## provider
+### IP provider network
+![brex](images/brex.png)
+
+```bash
+6: br-ex: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN
+    link/ether 52:54:00:d4:73:8c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.121.166/24 brd 192.168.121.255 scope global dynamic br-ex
+       valid_lft 2712sec preferred_lft 2712sec
+    inet6 fe80::5054:ff:fed4:738c/64 scope link
+       valid_lft forever preferred_lft forever
+
+```
+---
 ## Install
 
 ![architecture](images/basic.png)
