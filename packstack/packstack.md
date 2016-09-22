@@ -126,21 +126,22 @@ packstack --install-hosts=10.10.10.10,10.10.10.11,10.10.10.12
 ---
 ## Install openstack client [on host]
 ```bash
+## install packages
 sudo dnf install python-{openstack,keystone,nova,neutron,glance,cinder,\
 swift,heat,ceilometer}client
+## create folder
 cd ~ && mkdir openstackrc && cd openstackrc
-
+##create file
 cat << RC > admin_rc_v2
 unset OS_SERVICE_TOKEN
 export OS_USERNAME=admin
 export OS_PASSWORD=linux
 export OS_AUTH_URL=http://10.10.10.10:5000/v2.0
 export PS1='[\u@\h \W(keystone_admin)]\$ '
-
 export OS_TENANT_NAME=admin
 export OS_REGION_NAME=RegionOne
 RC
-
+## Test
 source admin_rc_v2
 openstack user list
 ```
