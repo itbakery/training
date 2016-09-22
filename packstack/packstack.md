@@ -147,10 +147,15 @@ openstack user list
 ```
 ---
 ## Get  V3
+```bash
+##prepare folder
+cd ~ && mkdir openstackrc_v3 && cd openstackrc_v3
+```
 From menu on left, select
 - Project > Compute > Access & Security
 - Select Api Access tab
-    - Download Openstack RC File V3 save as 'ADMIN_RC_V3' on host
+    - Download Openstack RC File V3 save as 'ADMIN_RC_V3' on host in
+    ~/openstackrc_v3/
 
 verify 3 line:
     - export OS_IDENTITY_API_VERSION=3
