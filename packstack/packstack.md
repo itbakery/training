@@ -176,7 +176,34 @@ openstack user list
 - Create the admin user:
 - Create the admin role:
 - Add the admin role to the admin project and user:
+
 ```bash
+$ openstack project create  demo2
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| enabled     | True                             |
+| id          | ce352b6caacb44899e58953f47537857 |
+| name        | demo2                            |
++-------------+----------------------------------+
+
+```
+---
+## create user demo2
+```bash
+openstack user create --password-prompt demo2
+User Password:
+Repeat User Password:
++----------+----------------------------------+
+| Field    | Value                            |
++----------+----------------------------------+
+| email    | None                             |
+| enabled  | True                             |
+| id       | d65a86eee08841c488d75f4f296ecf22 |
+| name     | demo2                            |
+| username | demo2                            |
++----------+----------------------------------+
 ```
 ---
 ## Open docs.openstack.org
