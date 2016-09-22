@@ -334,6 +334,14 @@ openstack image create "cirros" \
 
 ```
 ---
+## Compute service
+```bash
+##source rc
+source admin-openrc.sh
+
+openstack compute service list
+```
+---
 ## Install
 
 ![architecture](images/basic.png)
