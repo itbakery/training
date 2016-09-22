@@ -151,7 +151,7 @@ openstack user list
 ##prepare folder
 cd ~ && mkdir openstackrc_v3 && cd openstackrc_v3
 ```
-From menu on left, select
+From menu on left, select(open openstack web)
 - Project > Compute > Access & Security
 - Select Api Access tab
     - Download Openstack RC File V3 save as 'ADMIN_RC_V3' on host in
