@@ -253,6 +253,7 @@ openstack service list
 - service login first
 - get token
 - use token to request other service
+
 ```bash
 openstack token issue
 +------------+----------------------------------+
