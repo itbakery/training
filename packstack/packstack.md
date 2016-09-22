@@ -295,10 +295,39 @@ yum install wget
 wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
 ##source rc
 source admin-openrc.sh
+##create image
 openstack image create "cirros" \
   --file cirros-0.3.4-x86_64-disk.img \
   --disk-format qcow2 --container-format bare \
   --public
+```
+---
+## success
+
+```bash
++------------------+----------------------------------------------------+
+| Field            | Value                                              |
++------------------+----------------------------------------------------+
+| checksum         | ee1eca47dc88f4879d8a229cc70a07c6                   |
+| container_format | bare                                               |
+| created_at       | 2016-09-22T06:10:18Z                               |
+| disk_format      | qcow2                                              |
+| file             | /v2/images/5165156e-13d7-4638-b92e-                |
+|                  | cf6b08d7ad7c/file                                  |
+| id               | 5165156e-13d7-4638-b92e-cf6b08d7ad7c               |
+| min_disk         | 0                                                  |
+| min_ram          | 0                                                  |
+| name             | cirros                                             |
+| owner            | a1d6310f642642fa9139bcfe5aeffe67                   |
+| protected        | False                                              |
+| schema           | /v2/schemas/image                                  |
+| size             | 13287936                                           |
+| status           | active                                             |
+| tags             |                                                    |
+| updated_at       | 2016-09-22T06:10:19Z                               |
+| virtual_size     | None                                               |
+| visibility       | public                                             |
++------------------+----------------------------------------------------+
 ```
 ---
 ## Install
