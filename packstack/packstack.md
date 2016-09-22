@@ -290,8 +290,11 @@ scp * root@10.10.10.10:/root
 vagrant ssh controller
 sudo su -
 
+yum install wget
+## download image
 wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
-
+##source rc
+source admin-openrc.sh
 openstack image create "cirros" \
   --file cirros-0.3.4-x86_64-disk.img \
   --disk-format qcow2 --container-format bare \
