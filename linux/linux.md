@@ -241,6 +241,50 @@ userdel username
 userdel -r username
 
 ```
+---
+## Basic permission
+### Permission Group
+
+Each file and directory has three user based permission groups:
+
+- owner - The Owner permissions apply only the owner of the file or directory, they will not impact the actions of other users.
+
+- group - The Group permissions apply only to the group that has been assigned to the file or directory, they will not effect the actions of other users.
+
+- others users - The Others Users permissions apply to all other users on the system, this is the permission group that you want to watch the most.
+
+
+    - u - Owner
+    - g - Group
+    - o or a - All Users
+
+---
+---
+## Basic permission
+### Permission type
+Each file or directory has three basic permission types:
+
+- read - The Read permission refers to a user's capability to read the contents of the file.
+- write - The Write permissions refer to a user's capability to write or modify a file or directory.
+- execute - The Execute permission affects a user's capability to execute a file or view the contents of a directory.
+
+    - r - Read
+    - w - Write
+    - x - Execute
+---
+![permission](images/understanding_linux_files_permissions_755.png)
+---
+![permission](images/mode.png)
+
+###File type
+The setuid/setguid permissions are used to tell the system to run an executable as the owner with the owner\'s permissions
+    - chmod g+s file2.sh
+Sticky Bit Special Permissions (only apply on directory)
+    - chmod +t dir1
+---
+## Summary
+![oct](images/oct.png)
+---
 ## Check ip address
 ### ip command (iproute package
 
