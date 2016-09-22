@@ -358,6 +358,7 @@ openstack compute service list
 +----+----------------+----------------+----------+---------+-------+------------------+
 
 ```
+---
 ## Hypervisor
 via gui  :  Admin > System > Hypervisor
 ---
