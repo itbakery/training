@@ -129,6 +129,7 @@ packstack --install-hosts=10.10.10.10,10.10.10.11,10.10.10.12
 sudo dnf install python-{openstack,keystone,nova,neutron,glance,cinder,\
 swift,heat,ceilometer}client
 cd ~ && mkdir openstackrc && cd openstackrc
+
 cat << RC > admin_rc_v2
 unset OS_SERVICE_TOKEN
 export OS_USERNAME=admin
@@ -139,6 +140,7 @@ export PS1='[\u@\h \W(keystone_admin)]\$ '
 export OS_TENANT_NAME=admin
 export OS_REGION_NAME=RegionOne
 RC
+
 source admin_rc_v2
 openstack user list
 ```
@@ -156,7 +158,7 @@ verify 3 line:
 
 copy file ADMIN_RC_V3 to controller
 ```bash
-source ADMIN_RC_V3 
+source ADMIN_RC_V3
 ```
 ---
 ## Install
