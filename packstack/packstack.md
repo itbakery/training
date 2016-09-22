@@ -220,6 +220,7 @@ openstack role add --project demo2 --user demo2 _member_
 +-----------+----------------------------------+
 
 ```
+---
 ## Every user / service must be in project
 ```bash
 openstack project list
