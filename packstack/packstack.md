@@ -387,7 +387,9 @@ via gui  :  Admin > System > Hypervisor
 - [full size](images/packstack.png)
 
 ![architecture](images/packstack2.png)
-
+---
+## workshop
+![workshop](images/workshop.png)
 ---
 ## Keystone - Security is Critical
 - [full size keystone](images/identity-diagram.png)
