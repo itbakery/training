@@ -9,7 +9,7 @@ layout: false
 ## document
 ### Link
 http://docs.openstack.org/mitaka/install-guide-rdo/
-
+https://thaiopen.github.io/SipaLinuxCourse/
 - clone document
 
 ```bash
